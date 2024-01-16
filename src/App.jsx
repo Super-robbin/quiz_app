@@ -1,9 +1,16 @@
-import Header from "./components/Header"
-
+import Header from "./components/Header";
+import Quiz from "./components/Quiz";
 const App = () => {
   return (
-    <Header />
-  )
-}
+    <>
+      <div>
+        <Header />
+        <main>
+          <Quiz />
+        </main>
+      </div>
+    </>
+  );
+};
 
-export default App
+export default App;
