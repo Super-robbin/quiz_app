@@ -6,13 +6,10 @@ const Summary = ({ userAnswers }) => {
   const correctAnswers = userAnswers.filter(
     (answer, index) => answer === QUESTIONS[index].answers[0]
   );
-  const skippedAnswersShare = Math.round(
-    (skippedAnswers.length / userAnswers.length) * 100
-  );
+  const skippedAnswersShare = Math.round((skippedAnswers.length / userAnswers.length) * 100);
 
-  const correctAnswersShare = Math.round(
-    (correctAnswers.length / userAnswers.length) * 100
-  );
+  const correctAnswersShare =
+    Math.round((correctAnswers.length / userAnswers.length) * 100);
 
   const wrongAnswersShare = 100 - skippedAnswersShare - correctAnswersShare;
 
